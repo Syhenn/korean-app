@@ -3,6 +3,8 @@ let words = [];
 let filteredWords = [];
 let index = 0;
 
+let audioPlayer = new Audio();
+
 // Statistiques stockées localement
 const stats = {
   seen: JSON.parse(localStorage.getItem('kz_seen')) || {},
@@ -127,9 +129,21 @@ document.getElementById('mark-hard').addEventListener('click',()=>{
   updateSidebar();
 });
 
-// Speech synthesis
-function speak(text){
-  if(!('speechSynthesis' in window)){
+// Lecture audio Safari/Chrome/Firefox
+function playAudio(src) {
+  audioPlayer.src = src;
+  audioPlayer.load(); // précharge
+  audioPlayer.play().catch(err => {
+    console.log("Lecture audio bloquée ou erreur:", err);
+    // fallback synthèse vocale
+    const w = filteredWords[index];
+    speak(w.korean);
+  });
+}
+
+// Speech synthesis fallback
+function speak(text) {
+  if (!('speechSynthesis' in window)) {
     alert('Synthèse vocale non disponible dans ce navigateur.');
     return;
   }
@@ -138,6 +152,5 @@ function speak(text){
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
 }
-
 // Init
 loadWords();
