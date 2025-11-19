@@ -131,10 +131,11 @@ document.getElementById('mark-hard').addEventListener('click',()=>{
 
 // Lecture audio Safari/Chrome/Firefox
 function playAudio(src) {
-  const audio = new Audio(src); // créé ici
-  audio.play().catch(err => {
-    console.log("Impossible de lire l'audio:", err);
-    // fallback SpeechSynthesis
+  audioPlayer.src = src;
+  audioPlayer.load(); // précharge
+  audioPlayer.play().catch(err => {
+    console.log("Lecture audio bloquée ou erreur:", err);
+    // fallback synthèse vocale
     const w = filteredWords[index];
     speak(w.korean);
   });
