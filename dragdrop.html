@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Korean Zen — Drag & Drop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Korean Zen 🇰🇷</h1>
+    <nav>
+      <a href="index.html">Vocabulaire</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="minigames.html">Mini-jeux</a>
+      <a href="stats.html">Statistiques</a>
+      <a href="grammar.html">Grammaire</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Drag & Drop — Associe 한글 ↔ français</h2>
+
+      <div class="drag-controls">
+        <label for="drag-cat">Catégorie</label>
+        <select id="drag-cat">
+          <option value="all">Toutes</option>
+        </select>
+        <button id="start-drag">Commencer</button>
+      </div>
+
+      <div id="drag-area" class="drag-area">
+        <div id="left-col" class="drag-col"></div>
+        <div id="right-col" class="drag-col"></div>
+      </div>
+
+      <p id="drag-feedback"></p>
+      <div class="drag-stats">Corrects : <span id="drag-correct">0</span> / <span id="drag-total">0</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Glisse les cartes pour apprendre en bougeant 🌿</small>
+  </footer>
+
+  <script src="dragdrop.js"></script>
+</body>
+</html>

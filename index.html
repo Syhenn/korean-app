@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Korean Zen — Vocabulaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Korean</h1>
+    <nav>
+      <a href="index.html" class="active">Vocabulaire</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="minigames.html">Mini-jeux</a>
+      <a href="stats.html">Statistiques</a>
+      <a href="grammar.html">Grammaire</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Flashcards — vocabulaire</h2>
+
+      <div class="controls">
+        <label for="category">Catégorie</label>
+        <select id="category">
+          <option value="all">Toutes</option>
+        </select>
+
+        <div class="buttons">
+          <button id="shuffle">🔀 Mélanger</button>
+          <button id="prev">◀ Préc.</button>
+          <button id="next">Suiv. ▶</button>
+        </div>
+      </div>
+
+      <div id="card" class="card">
+        <div id="korean" class="korean">—</div>
+        <div id="romanization" class="romanization">—</div>
+        <div id="french" class="french">Clique pour voir la traduction</div>
+      </div>
+
+      <div class="card-actions">
+        <button id="speak">🔊 Prononcer</button>
+        <button id="mark-known">✔️ Connu</button>
+        <button id="mark-hard">⭐ Difficile</button>
+      </div>
+
+    </section>
+
+    <aside class="panel small-panel">
+      <h3>Raccourcis</h3>
+      <ul>
+        <li><a href="quiz.html">Faire un quiz rapide</a></li>
+        <li><a href="minigames.html">Mini-jeux (dictée, drag & drop)</a></li>
+        <li><a href="stats.html">Voir mes progrès</a></li>
+      </ul>
+
+      <h3>Progression rapide</h3>
+      <div class="progress">
+        <div>Vus : <span id="seen">0</span></div>
+        <div>Connus : <span id="knownCount">0</span></div>
+        <div>Difficiles : <span id="hardCount">0</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <small>Thème « Zen Coréen » — projet d'apprentissage personnel</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

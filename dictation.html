@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Korean Zen — Dictée</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Korean Zen 🇰🇷</h1>
+    <nav>
+      <a href="index.html">Vocabulaire</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="minigames.html">Mini-jeux</a>
+      <a href="stats.html">Statistiques</a>
+      <a href="grammar.html">Grammaire</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Dictée — écoute et écris le 한글</h2>
+
+      <div class="dictation-controls">
+        <label for="difficulty">Difficulté</label>
+        <select id="difficulty">
+          <option value="all">Toutes</option>
+          <option value="base">Base</option>
+          <option value="nourriture">Nourriture</option>
+          <option value="verbes">Verbes</option>
+        </select>
+
+        <button id="playWord">🔊 Lire un mot</button>
+        <button id="newWord">Nouveau mot</button>
+      </div>
+
+      <div id="dictation-box" class="dictation-box">
+        <p id="prompt">Écris le mot coréen que tu entends :</p>
+        <input id="dict-input" placeholder="Tape le 한글 ici" autocomplete="off">
+        <div class="dict-actions">
+          <button id="check">Vérifier</button>
+          <button id="replay">🔁 Réécouter</button>
+        </div>
+
+        <p id="dict-feedback"></p>
+        <div class="dict-stats">
+          <div>Réussites : <span id="dict-correct">0</span></div>
+          <div>Essais : <span id="dict-total">0</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Écoute attentivement et écris en 한글 🌿</small>
+  </footer>
+
+  <script src="dictation.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Korean Zen — Statistiques</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Korean Zen 🇰🇷</h1>
+    <nav>
+      <a href="index.html">Vocabulaire</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="minigames.html">Mini-jeux</a>
+      <a href="stats.html" class="active">Statistiques</a>
+      <a href="grammar.html">Grammaire</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Mes statistiques</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Mots vus</h3>
+          <p id="stat-seen">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Réussite (quiz)</h3>
+          <p id="stat-accuracy">0%</p>
+        </div>
+        <div class="stat-card">
+          <h3>Connus</h3>
+          <p id="stat-known">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>Difficiles</h3>
+          <p id="stat-hard">0</p>
+        </div>
+      </div>
+
+      <h3>Historique (derniers résultats)</h3>
+      <canvas id="historyChart" width="600" height="200"></canvas>
+
+      <div class="stat-controls">
+        <button id="resetAll">Réinitialiser tout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Suivre ses progrès motive </small>
+  </footer>
+
+  <script src="stats.js"></script>
+</body>
+</html>

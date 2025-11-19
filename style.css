@@ -1,0 +1,208 @@
+/* ----------------------------------------------------
+   🎋 THEME ZEN CORÉEN — STYLE GLOBAL
+---------------------------------------------------- */
+
+:root {
+  --bg: #f5f1e8;               /* beige clair zen */
+  --card: #ffffff;
+  --jade: #8bb8a8;             /* vert jade */
+  --jade-dark: #6d9b8a;
+  --text-dark: #333;
+  --soft-shadow: rgba(0,0,0,0.1);
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* ----------------------------------------------------
+   🎴 TITRES
+---------------------------------------------------- */
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--jade-dark);
+}
+
+h2 {
+  margin: 20px 0 10px;
+  color: var(--jade);
+}
+
+/* ----------------------------------------------------
+   🎋 SELECTEUR
+---------------------------------------------------- */
+
+select {
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  border: 2px solid var(--jade);
+  background: white;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* ----------------------------------------------------
+   🎋 CARTE VOCABULAIRE
+---------------------------------------------------- */
+
+#card {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 320px;
+  padding: 30px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px var(--soft-shadow);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+#card:hover {
+  transform: scale(1.03);
+}
+
+.korean {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.romanization {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.french {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------------
+   🔊 BOUTON AUDIO
+---------------------------------------------------- */
+
+button, a.button {
+  background: var(--jade);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+button:hover,
+a.button:hover {
+  background: var(--jade-dark);
+}
+
+/* ----------------------------------------------------
+   🎮 QUIZ
+---------------------------------------------------- */
+
+#quiz-box {
+  background: var(--card);
+  padding: 25px;
+  width: 90%;
+  max-width: 360px;
+  margin: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px var(--soft-shadow);
+}
+
+#choices button {
+  width: 100%;
+  margin: 8px 0;
+  background: #ece7df;
+  color: var(--text-dark);
+  border-radius: var(--radius);
+}
+
+#choices button:hover {
+  background: #e0d9cc;
+}
+
+/* ----------------------------------------------------
+   📊 STATS
+---------------------------------------------------- */
+
+.stats-box {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 20px var(--soft-shadow);
+}
+
+/* ----------------------------------------------------
+   📱 RESPONSIVE — MOBILE/ TABLETTE
+---------------------------------------------------- */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  #card {
+    padding: 25px;
+  }
+
+  button, a.button {
+    width: 90%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #choices button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #card {
+    padding: 20px;
+  }
+
+  .korean {
+    font-size: 2rem;
+  }
+
+  .french {
+    font-size: 1.2rem;
+  }
+
+  button, a.button {
+    font-size: 0.9rem;
+  }
+
+}

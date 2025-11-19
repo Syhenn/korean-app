@@ -1,0 +1,40 @@
+[
+  { "korean": "안녕하세요", "romanization": "annyeong-haseyo", "french": "bonjour", "category": "base" },
+  { "korean": "감사합니다", "romanization": "gamsahamnida", "french": "merci", "category": "base" },
+  { "korean": "미안합니다", "romanization": "mianhamnida", "french": "désolé", "category": "base" },
+  { "korean": "네", "romanization": "ne", "french": "oui", "category": "base" },
+  { "korean": "아니요", "romanization": "aniyo", "french": "non", "category": "base" },
+
+  { "korean": "물", "romanization": "mul", "french": "eau", "category": "nourriture" },
+  { "korean": "밥", "romanization": "bap", "french": "riz / repas", "category": "nourriture" },
+  { "korean": "김치", "romanization": "gim-chi", "french": "kimchi", "category": "nourriture" },
+  { "korean": "사과", "romanization": "sa-gwa", "french": "pomme", "category": "nourriture" },
+  { "korean": "라면", "romanization": "ra-myeon", "french": "ramen", "category": "nourriture" },
+
+  { "korean": "학교", "romanization": "hak-gyo", "french": "école", "category": "lieux" },
+  { "korean": "집", "romanization": "jip", "french": "maison", "category": "lieux" },
+  { "korean": "공원", "romanization": "gong-won", "french": "parc", "category": "lieux" },
+  { "korean": "병원", "romanization": "byeong-won", "french": "hôpital", "category": "lieux" },
+
+  { "korean": "가다", "romanization": "ga-da", "french": "aller", "category": "verbes" },
+  { "korean": "오다", "romanization": "o-da", "french": "venir", "category": "verbes" },
+  { "korean": "먹다", "romanization": "meok-da", "french": "manger", "category": "verbes" },
+  { "korean": "마시다", "romanization": "ma-si-da", "french": "boire", "category": "verbes" },
+  { "korean": "보다", "romanization": "bo-da", "french": "voir / regarder", "category": "verbes" },
+
+  { "korean": "강아지", "romanization": "gang-a-ji", "french": "chien", "category": "animaux" },
+  { "korean": "고양이", "romanization": "go-yang-i", "french": "chat", "category": "animaux" },
+  { "korean": "새", "romanization": "sae", "french": "oiseau", "category": "animaux" },
+
+  { "korean": "엄마", "romanization": "eom-ma", "french": "maman", "category": "famille" },
+  { "korean": "아빠", "romanization": "a-ppa", "french": "papa", "category": "famille" },
+  { "korean": "형", "romanization": "hyeong", "french": "grand frère (dit par un garçon)", "category": "famille" },
+
+  { "korean": "책", "romanization": "chaek", "french": "livre", "category": "objets" },
+  { "korean": "의자", "romanization": "ui-ja", "french": "chaise", "category": "objets" },
+  { "korean": "컴퓨터", "romanization": "keom-pyu-teo", "french": "ordinateur", "category": "objets" },
+
+  { "korean": "크다", "romanization": "keu-da", "french": "grand", "category": "adjectifs" },
+  { "korean": "작다", "romanization": "jak-da", "french": "petit", "category": "adjectifs" },
+  { "korean": "좋다", "romanization": "jot-da", "french": "bon / bien", "category": "adjectifs" }
+]
